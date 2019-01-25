@@ -1,0 +1,28 @@
+body
+{
+	background-color: gray;
+}
+
+#mainContain
+{
+	
+}
+
+#mainCol
+{
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	margin-top: 5em;
+}
+
+#pageHeading
+{
+	font-size: 2em;
+}
+
+#pageContent
+{
+	margin: 1em;
+	font-size: 1.2em;
+}
