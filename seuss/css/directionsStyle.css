@@ -1,0 +1,9 @@
+#map
+{
+	text-align: center;
+}
+
+#map > *
+{
+	width: 80%;
+}
