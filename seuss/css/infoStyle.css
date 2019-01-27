@@ -8,6 +8,12 @@
 	margin-top: 0.3em;
 }
 
+#pointIMG
+{
+	width: 300px;
+	display: inline;
+}
+
 th
 {
 	width: 5em;

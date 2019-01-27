@@ -6,4 +6,7 @@
 #map > *
 {
 	width: 80%;
+	border: 2px;
+	border-style: solid;
+	border-color: #91e8e5;
 }

@@ -1,19 +1,54 @@
 body
 {
-	background-color: gray;
+	background-color: #e7e7e7;
+	background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%230ee8e0' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+	/* Pattern from: http://www.heropatterns.com/ (Diagonal Stripes) */
+}
+
+.nav-item
+{
+	font-weight: bold;
+}
+
+.nav-item:hover
+{
+	background-color: #91e8e5;
+	box-shadow: 1px 1px 3px black;
+	border-radius: 5px;
+	transition: 0.3s;
+}
+
+#logoLink
+{
+	width: 3.2em;
+}
+
+#logoIMG
+{
+	width: 75px;
+	height: 75px;
+	transition: 0.3s;
+}
+
+#logoIMG:hover
+{
+	position:relative;
+	-webkit-transform: translateY(-5px);
+	transform: translateY(-5px);
+	transition: 0.3s;
 }
 
 #mainContain
 {
-	
 }
 
 #mainCol
 {
 	margin-left: auto;
 	margin-right: auto;
-	background-color: white;
-	margin-top: 5em;
+	background-color: whitesmoke;
+	margin-top: 3em;
+	box-shadow: 0px 2px 15px black;
 }
 
 #pageHeading
