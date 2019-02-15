@@ -1,0 +1,117 @@
+/* Auto Scroll Switch */
+#scrollContainer
+{
+	margin-top: 1em;
+	font-size: 1.2em;
+}
+#scrollSwitch 
+{
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+}
+
+#scrollSwitch input 
+{
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+#scrollSlider 
+{
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	border-radius: 34px;
+	transition: .2s;
+}
+
+#scrollSlider:before {
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	border-radius: 50%;
+	transition: .2s;
+}
+
+#scrollSwitch input:checked + #scrollSlider
+{
+	background-color: #91e8e5;
+}
+
+#scrollSwitch input:focus + #scrollSlider
+{
+	box-shadow: 0 0 1px #91e8e5;
+}
+
+#scrollSwitch input:checked + #scrollSlider:before 
+{
+	transform: translateX(26px);
+}
+
+
+
+/* Carousel */
+.carousel-inner
+{
+	text-align: center;
+	height: 600px; 
+}
+
+.coverIMG 
+{
+	width: 25%;
+	height: auto;
+}
+
+.carousel-caption
+{
+	position: static;
+	color: black;
+	width: 50%;
+	margin: auto;
+}
+
+/* Controls & Indicators */
+.carousel-control-prev-icon,
+.carousel-control-next-icon 
+{
+	height: 100px;
+	width: 100px;
+	outline: black;
+	background-image: none;
+	color: black;
+}
+
+.carousel-control-next-icon:after
+{
+	content: '>';
+	font-size: 55px;
+
+}
+
+.carousel-control-prev-icon:after 
+{
+	content: '<';
+	font-size: 55px;
+}
+
+.carousel-indicators li
+{
+	background-color: rgba(0,0,0,1);
+}
+
+.carousel-indicators .active
+{
+	background-color: #91e8e5;
+}

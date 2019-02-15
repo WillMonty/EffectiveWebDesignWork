@@ -1,47 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<title>Bestest Books | Home</title>
-	<meta content="width=device-width, initial-scale=1" name="viewport">
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/generalStyle.css" rel="stylesheet" type="text/css">
-	<link href="css/homeStyle.css" rel="stylesheet" type="text/css">
-	<link href="media/favicon.png" rel="icon" sizes="16x16" type="image/png">
-</head>
-<body>
-	<div class="row" id="mainContain">
-		<div class="col-md-2 col-xs-1"></div>
-		<div class="col-md-8 col-xs-10" id="mainCol">
-			<nav class="navbar navbar-expand-lg navbar-light bg-light">
-				<a class="navbar-brand" href="index.html" id="logoLink"><img alt="Book Logo" data-placement="top" data-toggle="tooltip" id="logoIMG" src="media/BestestBooksLogo.png" title="Original book by Raúl Ruano Ruiz. Sourced from Wikimedia Commons: https://commons.wikimedia.org/wiki/Book#/media/File:Icono_Normativa.png"></a> <button aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNavDropdown" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
-				<div class="collapse navbar-collapse" id="navbarNavDropdown">
-					<ul class="navbar-nav">
-						<li class="nav-item">
-							<a class="nav-link" href="info.html">Event Info</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="directions.html">Event Directions</a>
-						</li>
-					</ul>
+	<head>
+		<title>Bestest Books | Home</title>
+		<meta content="width=device-width, initial-scale=1" name="viewport">
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/generalStyle.css" rel="stylesheet" type="text/css">
+		<link href="css/homeStyle.css" rel="stylesheet" type="text/css">
+		<link href="media/favicon.png" rel="icon" sizes="16x16" type="image/png">
+	</head>
+	<body>
+		<div class="row">
+			<div class="col-md-2 col-xs-1"></div>
+			<div class="col-md-8 col-xs-10" id="mainCol">
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+					<a class="navbar-brand" href="index.html" id="logoLink"><img alt="Book Logo" data-placement="top" data-toggle="tooltip" id="logoIMG" src="media/BestestBooksLogo.png" title="Original book by Raúl Ruano Ruiz. Sourced from Wikimedia Commons: https://commons.wikimedia.org/wiki/Book#/media/File:Icono_Normativa.png"></a> <button aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNavDropdown" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+					<div class="collapse navbar-collapse" id="navbarNavDropdown">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" href="store.html">Book Store</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="info.html">Event Info</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="directions.html">Event Directions</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				<div id="pageHeading">
+					Bestest Books Home Page
 				</div>
-			</nav>
-			<div id="pageHeading">
-				Bestest Books presents...
+				<div class="row">
+					<div id="storeCol" class="col-md-6 col-xs-12">
+						<div class="headline"><a href="store.html">New Book Store!</a></div>
+						<img id="bookIMG" alt="Stack of books" data-placement="bottom" data-toggle="tooltip" id="hatIMG" src="media/bookstack.png" title="Image sourced from KissPNG: https://www.kisspng.com/png-watercolor-painting-book-computer-file-watercolor-513523/preview.html">
+					</div>
+					<div id="eventTitle" class="col-md-6 col-xs-12">
+						<div class="headline"><a href="info.html">Seuss-A-Palooza Luncheon!</a></div>
+						<img id="hatIMG" alt="Cat In The Hat" data-placement="bottom" data-toggle="tooltip" src="media/hat.png" title="Image sourced from evld.org: https://www.evld.org/images/cat-in-hatpng">
+					</div>
+				</div>
 			</div>
-			<div id="eventTitle"><a href="info.html">Seuss-A-Palooza Luncheon!</a> <img alt="Cat In The Hat" data-placement="bottom" data-toggle="tooltip" id="hatIMG" src="media/hat.png" title="Image sourced from evld.org: https://www.evld.org/images/cat-in-hatpng"></div>
+			<div class="col-md-2 col-xs-1"></div>
 		</div>
-		<div class="col-md-2 col-xs-1"></div>
-	</div>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js">
-	</script> 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js">
-	</script> 
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
-	</script> 
-	<script type="text/javascript">
-	       $(function () {
-	           $('[data-toggle="tooltip"]').tooltip()
-	       })
-	</script>
-</body>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js">
+		</script> 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js">
+		</script> 
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+		</script> 
+		<script src="js/tooltip.js"></script>
+	</body>
 </html>

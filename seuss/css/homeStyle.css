@@ -1,4 +1,4 @@
-#eventTitle
+.headline
 {
 	font-size: 3em;
 	font-weight: bold;
@@ -10,4 +10,23 @@
 	display: block;
 	margin: auto;
 	height: 400px;
+}
+
+#bookIMG
+{
+	display: block;
+	margin: auto;
+	margin-top: 3em;
+	height: 250px;
+}
+
+#storeCol
+{
+	border-right: 3px;
+	border-style: solid;
+	border-color: #91e8e5;
+
+	border-top: 0px;
+	border-left: 0px;
+	border-bottom: 0px;
 }
