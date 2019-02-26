@@ -1,3 +1,5 @@
+
+
 body
 {
 	overflow-x: hidden;
@@ -6,9 +8,20 @@ body
 	/* Pattern from: http://www.heropatterns.com/ (Diagonal Stripes) */
 }
 
+.bg-light
+{
+	background-color: #F5F5F5 !important;
+}
+
+.navbar-toggler:focus
+{
+	outline: 5px auto #91e8e5;
+}
+
 .nav-item
 {
 	font-weight: bold;
+	font-size: 0.9rem;
 }
 
 .nav-item:hover
@@ -44,17 +57,66 @@ body
 	margin-left: auto;
 	margin-right: auto;
 	background-color: whitesmoke;
-	margin-top: 3em;
+	margin-top: 0rem;
 	box-shadow: 0px 2px 15px black;
 }
 
 #pageHeading
 {
-	font-size: 2em;
+	font-size: 1.5rem;
 }
 
 #pageContent
 {
-	margin: 1em;
-	font-size: 1.2em;
+	margin: 1rem;
+	font-size: 1.2rem;
+}
+
+/* Global Breakpoint Style */
+@media (min-width: 0px)
+{
+	html 
+	{
+		font-size: 1rem;
+	}
+}
+
+/* sm */
+@media (min-width: 512px) 
+{
+	html 
+	{
+		font-size: 1.2rem;
+	}
+}
+
+/* md */
+@media (min-width: 768px) 
+{
+	html 
+	{
+		font-size: 1.4rem;
+	}
+	
+	#mainCol
+	{
+		margin-top: 3rem;
+	}
+}
+
+/* lg */
+@media (min-width: 992px) 
+{
+	html 
+	{
+		font-size: 1.6rem;
+	}
+}
+
+/* xl */
+@media (min-width: 1200px) {
+	html 
+	{
+		font-size: 1.6rem;
+	}
 }
