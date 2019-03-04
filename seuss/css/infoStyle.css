@@ -11,8 +11,8 @@
 
 #pointIMG
 {
-	width: 300px;
-	display: inline;
+	width: 400px;
+	display: none;
 }
 
 #eventTable
@@ -23,4 +23,12 @@
 th
 {
 	width: 5.5rem;
+}
+
+@media (min-width: 768px) 
+{
+	#pointIMG
+	{
+		display: inline;
+	}
 }
