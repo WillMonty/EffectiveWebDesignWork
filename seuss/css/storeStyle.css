@@ -1,3 +1,8 @@
+#mainCol
+{
+	height: 100vh;
+}
+
 /* Auto Scroll Switch */
 #scrollContainer
 {
@@ -74,7 +79,7 @@
 .coverIMG 
 {
 	width: 12rem;
-	height: auto;
+	height: 20%;
 }
 
 .carousel-caption
