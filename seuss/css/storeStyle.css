@@ -1,8 +1,8 @@
 /* Auto Scroll Switch */
 #scrollContainer
 {
-	margin-top: 1em;
-	font-size: 1.2em;
+	margin-top: 1rem;
+	font-size: 1rem;
 }
 #scrollSwitch 
 {
@@ -10,6 +10,7 @@
 	display: inline-block;
 	width: 60px;
 	height: 34px;
+	vertical-align: middle;
 }
 
 #scrollSwitch input 
@@ -65,7 +66,7 @@
 .carousel-inner
 {
 	text-align: center;
-	height: 600px; 
+	height: 650px; 
 }
 
 .coverIMG 
@@ -80,6 +81,7 @@
 	color: black;
 	width: 50%;
 	margin: auto;
+	font-size: 0.8rem;
 }
 
 /* Controls & Indicators */

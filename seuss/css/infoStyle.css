@@ -5,7 +5,8 @@
 
 #infoList > *
 {
-	margin-top: 0.3em;
+	margin-top: 0.3rem;
+	font-size: 0.9rem;
 }
 
 #pointIMG
@@ -14,7 +15,12 @@
 	display: inline;
 }
 
+#eventTable
+{
+	font-size: 0.9rem;
+}
+
 th
 {
-	width: 5em;
+	width: 5.5rem;
 }
