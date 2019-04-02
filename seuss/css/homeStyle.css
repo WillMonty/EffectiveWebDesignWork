@@ -27,6 +27,30 @@
 	margin-bottom: 1rem;
 }
 
+#animation_container
+{
+	width:1300px; 
+	height:120px;
+	display: none;
+	background-color:rgba(255, 255, 255, 0.00);
+}
+
+#animation_container > canvas
+{
+	position: relative; 
+	background-color:rgba(255, 255, 255, 0.00);
+}
+
+#dom_overlay_container
+{
+	pointer-events: none;
+	overflow: hidden;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	display: block;
+}
+
 #storeCol
 {
 	border-style: solid;
@@ -47,6 +71,10 @@
 
 @media (min-width: 768px) 
 {
+	#animation_container
+	{
+		display: block;
+	}
 	#storeCol
 	{
 		border-right: 3px;
