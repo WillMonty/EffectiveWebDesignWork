@@ -15,7 +15,7 @@
 
 #bookIMG
 {
-	display: block;
+	display: relative;
 	margin: auto;
 	margin-top: 2rem;
 	height: 10rem;
@@ -29,9 +29,7 @@
 
 #animation_container
 {
-	width:1300px; 
-	height:120px;
-	display: none;
+	width: 50px;
 	background-color:rgba(255, 255, 255, 0.00);
 }
 
