@@ -1,0 +1,87 @@
+.page-container {
+	max-width: 60em;
+}
+
+.mainIMGArea {
+	margin-bottom: 2rem;
+	height: 50vh;
+}
+
+#mainArt {
+	max-width: 35em;
+	height: 45vh;
+	border: 3px solid black;
+}
+
+
+/* Art Grid */
+.artGrid {
+	margin: 0 auto;
+	width: 80vw;
+	max-width: 70vh;
+	max-height: 60vh;
+	font-size: 1rem;
+}
+
+.row {
+	padding-bottom: 1rem;
+}
+
+.unit {
+	flex: 1 0 auto;
+	position: relative;
+}
+
+.art {
+	width: 4rem;
+	height: 4rem;
+	border: 3px solid black;
+}
+
+.art:hover{
+	border: 3px solid white;
+}
+
+.art:active{
+	border: 3px solid yellow;
+}
+
+/* Form */
+form {
+	margin: auto;
+	width: 100%;
+}
+
+label {
+	width: 100%;
+	text-align: left;
+	float: left;
+	margin-right: 1rem;
+	margin-top: 0.5rem;
+}
+
+input {
+	max-width: 100vw;
+}
+
+#interestInput {
+	background-color: #aaa;
+}
+
+
+/* md */
+@media (min-width: 768px) {
+	.art {
+		width: 6rem;
+		height: 6rem;	
+	}
+
+	form {
+		max-width: 20vw;
+		margin: auto;
+	}
+	
+	input {
+		max-width: 20vw;	
+	}
+}

@@ -1,0 +1,32 @@
+.bground
+{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: url("../media/a.jpg") repeat;
+	z-index: -1;
+
+	background-repeat: repeat-x;
+	background-position: center;
+	background-size: 200%;
+}
+
+/* Info */
+.info {
+	padding: 0 1.5rem;
+}
+
+#name {
+	font-size: 3rem;
+}
+
+#intro {
+	font-size: 1.3em;
+}
+
+.info .btn-lg {
+	padding: .75rem 1.25rem;
+	font-weight: 700;
+}
