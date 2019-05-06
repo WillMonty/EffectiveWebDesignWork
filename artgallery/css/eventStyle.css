@@ -1,0 +1,13 @@
+.page-container {
+	max-width: 60em;
+}
+
+#eventArea {
+	margin-bottom: 2rem;
+	height: 75vh;
+}
+
+#eventIMG {
+	max-width: 35em;
+	border: 3px solid black;
+}
