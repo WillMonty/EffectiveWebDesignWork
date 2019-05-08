@@ -4,10 +4,14 @@
 
 #eventArea {
 	margin-bottom: 2rem;
-	height: 75vh;
+	height: 95vh;
 }
 
 #eventIMG {
-	max-width: 35em;
+	max-width: 80%;
 	border: 3px solid black;
+}
+
+#eventTable {
+	font-size: 1.2rem;
 }
