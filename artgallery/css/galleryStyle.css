@@ -63,8 +63,17 @@ input {
 	max-width: 100vw;
 }
 
-#interestInput {
+#interestI {
 	background-color: #aaa;
+}
+
+.invalid{
+	background-color: palevioletred !important;
+}
+
+.errorText{
+	color: red;
+	margin-top: 1rem;
 }
 
 

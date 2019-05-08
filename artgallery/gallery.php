@@ -16,7 +16,7 @@
 					<a href="index.html"><img class="brand" src="media/logo.png"/></a>
 					<nav class="nav nav-masthead justify-content-center">
 						<a class="nav-link" href="event.html">Event</a>
-						<a class="nav-link active" href="gallery.html">Gallery</a>
+						<a class="nav-link active" href="gallery.php">Gallery</a>
 					</nav>
 				</div>
 			</header>
@@ -78,23 +78,56 @@
 				</div>
 			</div>
 			<div class="mb-auto">
-				<h3>Get Pricing</h3>
-				<form>
+				<?php
+				if(empty($_POST)){
+				?>
+				<h3>Get Pricing for Selected Art</h3>
+				<form action="gallery.php" method="post">
 					<div class="form-group">
 						<label for="interestInput">Interested In</label>
-						<input type="text" class="form-control" id="interestInput" placeholder="Interest" readonly>
+						<input name="interest" type="text" class="form-control" id="interestI" value="Splash" readonly>
 					</div>
 					<div class="form-group">
 						<label for="emailInput">Email Address</label>
-						<input type="email" class="form-control" id="emailInput" placeholder="Enter email">
+						<input id="emailI" name="email" type="email" class="form-control" placeholder="Enter email">
 					</div>
 					<div class="form-group">
 						<label for="nameInput">Name</label>
-						<input type="text" class="form-control" id="nameInput" placeholder="Name">
+						<input id="nameI" name="name" type="text" class="form-control" placeholder="Name">
 					</div>
-					<button type="submit" class="btn btn-secondary">Contact Us</button>
-					<p>Thanks! We'll be in touch!</p>
+					<button type="submit" id="submit" class="btn btn-secondary mb-3">Contact Us</button>
 				</form>
+				<?php
+				}
+				else{
+					//Submission
+					$host = "localhost";
+					$user = "root";
+					$passwd = "";
+					$dbname = "blackpanda";
+
+					$cxn = mysqli_connect($host,$user,$passwd,$dbname)
+						or die("Couldn't connect to server");
+
+					if (!$cxn) {
+						echo "<h1>Could not connect to database.</h1>";
+						die("Connection failed: " . mysqli_connect_error());
+					}
+
+					$today = date("Y-m-d");
+					$email = $_POST["email"];
+					$interest = $_POST["interest"];
+					$name = $_POST["name"];
+
+					$sql = "INSERT INTO interestedusers (dateCreated, email, interest, name) VALUES
+              		('$today','$email','$interest','$name')";
+
+					mysqli_query($cxn,$sql);
+
+
+					echo "<h3>Thanks! We'll be in touch!</h3>";
+				}
+				?>
 			</div>
 		</div>
 	</body>
